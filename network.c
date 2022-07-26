@@ -5,7 +5,6 @@ int main(int argc, char const *argv[])
 {
 	NMClient *client;
 	NMActiveConnection *active;
-	const GPtrArray *connections;
 	client = nm_client_new(NULL, NULL);
 	active = nm_client_get_primary_connection(client);
 	if (active != NULL)
